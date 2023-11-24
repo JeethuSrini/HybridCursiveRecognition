@@ -1,6 +1,6 @@
 # Hybrid Architecture Pipeline for Cursive Handwriting Recognition
 
-##Description:
+## Description:
 
 This project is based on a hybrid architecture that utilizes two different state-of-the-art models
 
