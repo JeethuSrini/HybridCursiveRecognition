@@ -61,7 +61,9 @@ This process ensures that the bounding boxes are sorted in the correct order for
 <img width="592" alt="image" src="https://github.com/JeethuSrini/HybridCursiveRecognition/assets/85613102/f4995bef-6ebd-4021-b71e-b5ab1bc10f3a">
 
 
+
 **Recognition model output:** This includes the recognized characters within each segmented word.
+
 
 <img width="409" alt="image" src="https://github.com/JeethuSrini/HybridCursiveRecognition/assets/85613102/8ca49b85-dca2-484c-9423-ed0518b0a9e6">
 
