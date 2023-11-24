@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 ### Model Download
 
-####Download the necessary models:
+#### Download the necessary models:
 
 * Segmentation Model (.json and weights files)
 * Recognition Model (AttentionHTR file)
