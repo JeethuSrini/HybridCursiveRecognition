@@ -1,60 +1,70 @@
 # Hybrid Architecture Pipeline for Cursive Handwritting recognition
 
-Description
-This project is based on a hybrid architecture that utilizes two different state-of-the-art models:
+##Description:
 
-Segmentation Model: Developed by Harald Scheidl
+This project is based on a hybrid architecture that utilizes two different state-of-the-art models
 
-Recognition Model (AttentionHTR): Developed by Ekta Vats and Dmitrijs Kass
+[**Segmentation Model**](https://drive.google.com/drive/folders/1tgRiiQk3793rexpa0fjNa0f21RnScOkv?usp=share_link): Developed by Harald Scheidl
+
+[**Recognition Model (AttentionHTR)**](https://drive.google.com/file/d/1dXTJC57QcrZLjVDKRiqwx6s37Q6_oZxq/view?usp=share_link
+): Developed by Ekta Vats and Dmitrijs Kass
 
 By combining these two models, this project aims to achieve improved performance in cursive handwriting recognition. The segmentation model is responsible for identifying and segmenting individual words in the cursive text, while the recognition model is responsible for recognizing the characters within each segmented word.
 
-How to Run
-Prerequisites
+## How to Run
 
-Install all the required dependencies:
-Bash
+### Prerequisites
+
+#### Install all the required dependencies:
+
 pip install -r requirements.txt
-Use code with caution. Learn more
 
-Model Download
+### Model Download
 
-Download the necessary models:
+####Download the necessary models:
 
-Segmentation Model (.json and weights files)
-Recognition Model (AttentionHTR file)
-Model Placement
+* Segmentation Model (.json and weights files)
+* Recognition Model (AttentionHTR file)
 
-Create a folder named model and place the downloaded segmentation model files (.json and weights) inside it.
+### Model Placement
 
-Create a folder named models and place the downloaded recognition model (AttentionHTR) file inside it.
+* Create a folder named model and place the downloaded segmentation model files (.json and weights) inside it.
 
-Execution
+* Create a folder named models and place the downloaded recognition model (AttentionHTR) file inside it.
 
-Run the provided Jupyter Notebook file (ipynb) to execute the pipeline.
-Algorithm for Sorting Bounding Boxes in Correct Order
-The algorithm ensures that the correct bounding boxes of the words are fed into the recognition model. This is achieved by:
+### Execution
 
-Sorting all bounding boxes according to their height.
+* Run the provided Jupyter Notebook file (ipynb) to execute the pipeline.
+* Algorithm for Sorting Bounding Boxes in Correct Order
+* The algorithm ensures that the correct bounding boxes of the words are fed into the recognition model. This is achieved by:
 
-Saving the coordinates of the bounding box with the highest xmin (width coordinate) and ymin (height coordinate).
+## Sorting all bounding boxes from top to bottom and left to right.
 
-Iterating over other bounding boxes and subtracting the height (ymin) of the current bounding box from the saved ymin.
+* Saving the bounding box coordinates with the highest ymin and ymax (height coordinates).
 
-If the difference is less than the difference between the saved ymax and ymin, then the current bounding box is considered to be part of the same line as the saved bounding box.
+* Iterating over other bounding boxes and subtracting the height (ymin) of the current bounding box from the saved ymin.
 
-If the condition fails, then the saved ymin and ymax are updated, indicating that a new line has been encountered.
+* If the difference is less than the difference between the saved ymax and ymin, then the current bounding box is considered to be part of the same line as the saved bounding box.
 
-The list of bounding boxes for the previous line is emptied, and a new list is created for the current line.
+* If the condition fails, the saved ymin and ymax are updated, indicating that a new line has been encountered.
+
+* The list of bounding boxes for the previous line is emptied, and a new list is created for the current line.
 
 This process ensures that the bounding boxes are sorted in the correct order for feeding into the recognition model.
 
-Results
-The output of the pipeline consists of:
+##Results
 
-Segmentation model output: This includes the identified and segmented words in the cursive text.
+###The output of the pipeline consists of:
 
-Recognition model output: This includes the recognized characters within each segmented word.
+**Segmentation model output**: This includes the identified and segmented words in the cursive text.
 
-Conclusion
+<img width="592" alt="image" src="https://github.com/JeethuSrini/HybridCursiveRecognition/assets/85613102/f4995bef-6ebd-4021-b71e-b5ab1bc10f3a">
+
+**Recognition model output**: This includes the recognized characters within each segmented word.
+
+<img width="409" alt="image" src="https://github.com/JeethuSrini/HybridCursiveRecognition/assets/85613102/8ca49b85-dca2-484c-9423-ed0518b0a9e6">
+
+
+## Conclusion
+
 This project demonstrates the effectiveness of using a hybrid architecture to improve cursive handwriting recognition. By combining two state-of-the-art models, the pipeline achieves improved performance compared to other available models.
