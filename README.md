@@ -1,4 +1,4 @@
-# Hybrid Architecture Pipeline for Cursive Handwritting recognition
+# Hybrid Architecture Pipeline for Cursive Handwriting Recognition
 
 ##Description:
 
