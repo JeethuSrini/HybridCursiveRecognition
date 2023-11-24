@@ -63,6 +63,7 @@ This process ensures that the bounding boxes are sorted in the correct order for
 
 **Recognition model output**: This includes the recognized characters within each segmented word.
 
+<br />
 <img width="409" alt="image" src="https://github.com/JeethuSrini/HybridCursiveRecognition/assets/85613102/8ca49b85-dca2-484c-9423-ed0518b0a9e6">
 
 
