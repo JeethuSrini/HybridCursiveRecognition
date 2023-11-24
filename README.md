@@ -52,9 +52,9 @@ pip install -r requirements.txt
 
 This process ensures that the bounding boxes are sorted in the correct order for feeding into the recognition model.
 
-##Results
+## Results
 
-###The output of the pipeline consists of:
+### The output of the pipeline consists of:
 
 **Segmentation model output**: This includes the identified and segmented words in the cursive text.
 
