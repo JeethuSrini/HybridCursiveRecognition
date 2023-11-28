@@ -4,10 +4,9 @@
 
 This project is based on a hybrid architecture that utilizes two different state-of-the-art models
 
-[**Segmentation Model**](https://drive.google.com/drive/folders/1tgRiiQk3793rexpa0fjNa0f21RnScOkv?usp=share_link): Developed by Harald Scheidl
+**Segmentation Model**
 
-[**Recognition Model (AttentionHTR)**](https://drive.google.com/file/d/1dXTJC57QcrZLjVDKRiqwx6s37Q6_oZxq/view?usp=share_link
-): Developed by Ekta Vats and Dmitrijs Kass
+**Recognition Model (AttentionHTR)**
 
 By combining these two models, this project aims to achieve improved performance in cursive handwriting recognition. The segmentation model is responsible for identifying and segmenting individual words in the cursive text, while the recognition model is responsible for recognizing the characters within each segmented word.
 
@@ -23,8 +22,9 @@ pip install -r requirements.txt
 
 #### Download the necessary models:
 
-* Segmentation Model (.json and weights files)
-* Recognition Model (AttentionHTR file)
+* [**Segmentation Model**](https://drive.google.com/drive/folders/1tgRiiQk3793rexpa0fjNa0f21RnScOkv?usp=share_link) (.json and weights files)
+* [**Recognition Model (AttentionHTR)**](https://drive.google.com/file/d/1dXTJC57QcrZLjVDKRiqwx6s37Q6_oZxq/view?usp=share_link
+) (AttentionHTR file)
 
 ### Model Placement
 
