@@ -9,3 +9,9 @@ lmdb
 requests
 fire
 opencv-contrib-python
+keras
+tensorflow
+path
+scikit-learn
+matplotlib
+pyspellchecker
