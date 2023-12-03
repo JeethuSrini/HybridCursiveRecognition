@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 #### Download the necessary models:
 
-* [**Segmentation Model**](https://drive.google.com/drive/folders/1tgRiiQk3793rexpa0fjNa0f21RnScOkv?usp=share_link) (.json and weights files)
+* [**Segmentation Model**]([https://drive.google.com/drive/folders/1tgRiiQk3793rexpa0fjNa0f21RnScOkv?usp=share_link](https://drive.google.com/file/d/1mXJqMGufUILcAHTab0SNfGNCgWJzauZn/view?usp=share_link)) (.json and weights files)
 * [**Recognition Model (AttentionHTR)**](https://drive.google.com/file/d/1dXTJC57QcrZLjVDKRiqwx6s37Q6_oZxq/view?usp=share_link
 ) (AttentionHTR file)
 
