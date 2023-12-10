@@ -4,9 +4,9 @@
 
 This project is based on a hybrid architecture that utilizes two different state-of-the-art models
 
-**Segmentation Model**
+**Segmentation Model**: Developed by Harald Scheidl
 
-**Recognition Model (AttentionHTR)**
+**Recognition Model (AttentionHTR)**: Developed by Ekta Vats and Dmitrijs Kass
 
 By combining these two models, this project aims to achieve improved performance in cursive handwriting recognition. The segmentation model is responsible for identifying and segmenting individual words in the cursive text, while the recognition model is responsible for recognizing the characters within each segmented word.
 
